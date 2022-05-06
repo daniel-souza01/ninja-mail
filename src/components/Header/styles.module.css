@@ -1,0 +1,63 @@
+.headerContainer {
+  height: 102px;
+}
+
+.headerContent {
+  max-width: 1267px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.headerContent a img {
+  position: absolute;
+  top: 21px;
+}
+
+.headerContent nav {
+  margin-left: auto;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 1.275px;
+}
+
+.headerContent nav a {
+  color: var(--black);
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+}
+
+.headerContent nav a + a {
+  margin-left: 22px;
+}
+
+.headerContent nav button {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.275px;
+  color: var(--white);
+
+  background: var(--green);
+  border: none;
+  padding: 10px 20px 11px;
+  margin-left: 31px;
+}
+
+.headerContent nav a:hover::after {
+  content: '';
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  background: var(--green);
+}
