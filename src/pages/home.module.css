@@ -6,21 +6,12 @@
 
 /* ================= background stuff ================== */
 .bgStuff {
-	background-image: url('/bg_stuff.jpg');
-	background-repeat: no-repeat;
-
 	position: absolute;
-	width: 1891px;
-	/*width: 100%;*/
+	width: 100%;
+	max-width: 1440px;
 	height: 2648px;
-	left: -92px;
-	top: 96px;
 
-	z-index: 1;
-
-	max-width: 1891px;
-
-	overflow: hidden;
+	z-index: 0;
 }
 
 /* ================= hero session ================== */
@@ -161,6 +152,8 @@
 
 	display: flex;
 	justify-content: space-between;
+
+	position: relative;
 }
 
 .cardsSession div:first-child {
@@ -256,6 +249,7 @@
 	max-height: 530px;
 
 	margin: 133px auto 0px;
+	position: relative;
 }
 
 .studyCases {

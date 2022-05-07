@@ -9,6 +9,7 @@
   --black: #000000;
   --green: #4ba87d;
   --border-color: #9f9f9f;
+  --footer-divider-color: #dbdbdb;
 }
 
 @media (max-width: 1080px) {

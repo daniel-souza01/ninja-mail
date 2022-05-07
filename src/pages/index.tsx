@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.homeContainer}>
-        {/*<div className={styles.bgStuff}></div>*/}
+      <img className={styles.bgStuff} src="/bg_stuff.jpg" alt="background stuff" />
 
         <session className={styles.hero}>
           <div className={styles.heroLeftItems}>
@@ -91,11 +91,11 @@ export default function Home() {
         <session className={styles.brandsSession}>
           <h2>All the best brands already use us.</h2>
           <div>
-            <img src="/brands/last_knight.svg" alt="" />
-            <img src="/brands/dragon_eye.svg" alt="" />
-            <img src="/brands/quest_ai.svg" alt="" />
-            <img src="/brands/radio_tee.svg" alt="" />
-            <img src="/brands/game_commerce.svg" alt="" />
+            <img src="/brands/last_knight.svg" alt="logo last knight paris" />
+            <img src="/brands/dragon_eye.svg" alt="logo dragon eye vodka" />
+            <img src="/brands/quest_ai.svg" alt="logo quest ai" />
+            <img src="/brands/radio_tee.svg" alt="logo radio tree" />
+            <img src="/brands/game_commerce.svg" alt="logo game commerce" />
           </div>
         </session>
 
