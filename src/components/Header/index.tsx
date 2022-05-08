@@ -8,7 +8,7 @@ export function Header() {
       <div className={styles.headerContent}>
         <Link href="/" passHref>
           <a>
-            <img src="ninja_mail_logo.svg" alt="NinjaMail Logo" />
+            <img src="logo-full.svg" alt="Logo" />
           </a>
         </Link>
 
