@@ -1,55 +1,58 @@
 .headerContainer {
-  height: 102px;
+  height: 6.375rem;
 }
 
 .headerContent {
+  position: relative;
   max-width: 1267px;
   height: inherit;
   margin: auto;
+
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .headerContent a img {
   position: absolute;
-  top: 21px;
+  top: 1.3125rem;
 }
 
 .headerContent nav {
-  margin-left: auto;
-  font-family: 'Raleway';
-  font-style: normal;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 20px;
   letter-spacing: 1.275px;
+
+  margin-left: auto;
 }
 
 .headerContent nav a {
-  color: var(--black);
   position: relative;
   display: inline-block;
-  width: 110px;
+  width: 6.875rem;
+
   text-align: center;
+  color: var(--black);
 }
 
 .headerContent nav a + a {
-  margin-left: 22px;
+  margin-left: 1.375rem;
 }
 
 .headerContent nav button {
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   font-weight: 800;
-  font-size: 17px;
-  line-height: 20px;
-  text-align: center;
   letter-spacing: 1.275px;
-  color: var(--white);
 
+  text-align: center;
+  color: var(--white);
   background: var(--green);
   border: none;
-  padding: 10px 20px 11px;
-  margin-left: 31px;
+
+  margin-left: 1.9375rem;
+  width: 10.5rem;
+  height: 2.5625rem;
 }
 
 .headerContent nav a:hover::after {
@@ -60,4 +63,78 @@
   bottom: -11px;
   left: 0;
   background: var(--green);
+}
+
+/* ================ media queries ================= */
+
+@media (max-width: 768px) {
+  .headerContainer {
+    height: 4.125rem;
+  }
+
+  .headerContent a img {
+    width: 10.815625rem;
+    height: 3.276875rem;
+
+    left: -0.375;
+    top: 0.8125rem;
+  }
+
+  .headerContent nav {
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    letter-spacing: 0.825px;
+  }
+
+  .headerContent nav a {
+    width: 4.4375rem;
+  }
+
+  .headerContent nav a + a {
+    margin-left: 0.6875rem;
+  }
+
+  .headerContent nav button {
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    letter-spacing: 0.825px;
+
+    margin-left: 1rem;
+    width: 6.875rem;
+    height: 1.5625rem;
+  }
+
+  .headerContent nav a:hover::after {
+    height: 3px;
+    bottom: -6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .headerContainer {
+    height: 3.875rem;
+  }
+
+  .headerContent a img {
+    width: 9.6875rem;
+    height: 3.25rem;
+
+    left: 0.75rem;
+    top: 0.5625rem;
+  }
+
+  .headerContent nav {
+    font-size: 0.6875rem;
+    line-height: 0.8125rem;
+    letter-spacing: 0.825px;
+  }
+
+  .headerContent nav a {
+    display: none;
+  }
+
+  .headerContent nav button {
+    margin-left: 0;
+    margin-right: 13px;
+  }
 }

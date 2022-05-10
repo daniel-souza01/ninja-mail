@@ -104,9 +104,10 @@ export default function Home() {
           </h2>
 
           <div className={styles.inputContainer}>
-            <input type="email" placeholder="Enter your email" />
+            <div>
+              <input type="email" placeholder="Enter your email" />
+            </div>
             <button type="submit">JOIN OUR LIST</button>
-            <span>Thanks! Email received.</span>
           </div>
         </section>
 
@@ -115,16 +116,30 @@ export default function Home() {
           <h2>All the best brands already use us.</h2>
           <div>
             <img
+              id={styles.lastKnightParis}
               src="/assets/last-knight-paris.png"
               alt="logo last knight paris"
             />
             <img
+              id={styles.dragonEyeVodka}
               src="/assets/dragon-eye-vodka.png"
               alt="logo dragon eye vodka"
             />
-            <img src="/assets/quest-ai.png" alt="logo quest ai" />
-            <img src="/assets/radiotee.png" alt="logo radiotree" />
-            <img src="/assets/gamecommerce.png" alt="logo gamecommerce" />
+            <img
+              id={styles.questAi}
+              src="/assets/quest-ai.png"
+              alt="logo quest ai"
+            />
+            <img
+              id={styles.radiotee}
+              src="/assets/radiotee.png"
+              alt="logo radiotree"
+            />
+            <img
+              id={styles.gamecommerce}
+              src="/assets/gamecommerce.png"
+              alt="logo gamecommerce"
+            />
           </div>
         </section>
 

@@ -13,10 +13,18 @@ export function Header() {
         </Link>
 
         <nav>
-          <a href="#">FEATURES</a>
-          <a href="#">PRICING</a>
-          <a href="#">SERVICES</a>
-          <a href="#">PARTNERS</a>
+          <Link href="/" passHref>
+            <a>FEATURES</a>
+          </Link>
+          <Link href="/" passHref>
+            <a>PRICING</a>
+          </Link>
+          <Link href="/" passHref>
+            <a>SERVICES</a>
+          </Link>
+          <Link href="/" passHref>
+            <a>PARTNERS</a>
+          </Link>
 
           <button type="button">SIGN UP FREE</button>
         </nav>
