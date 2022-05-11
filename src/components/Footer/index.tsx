@@ -1,6 +1,6 @@
-import styles from './styles.module.css'
-
 import Link from 'next/link'
+
+import styles from './styles.module.css'
 
 export function Footer() {
   return (
@@ -8,12 +8,12 @@ export function Footer() {
       <footer className={styles.footerContainer}>
         <div className={styles.firstFooterGroup}>
           <Link href="/" passHref>
-            <a>
+            <a data-aos="fade-right">
               <img src="logo-full.svg" alt="Logo" />
             </a>
           </Link>
 
-          <div className={styles.footerLinks}>
+          <div data-aos="fade-left" className={styles.footerLinks}>
             <ul>
               <li>
                 <a href="#">Features</a>

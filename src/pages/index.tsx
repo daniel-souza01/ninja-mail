@@ -1,12 +1,18 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
+import Aos from 'aos'
 
 import styles from './home.module.css'
+import 'aos/dist/aos.css'
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({ duration: 500 })
+  }, [])
   return (
     <>
       <Head>
-        <title>Home | NinjaMail</title>
+        <title>NinjaMail</title>
       </Head>
 
       <main className={styles.homeContainer}>
@@ -19,17 +25,22 @@ export default function Home() {
         {/* ================= hero session ================== */}
         <section className={styles.hero}>
           <div className={styles.heroLeftItems}>
-            <h1>Create Stunning Email Campaigns</h1>
-            <p>
+            <h1 data-aos="fade-left">Create Stunning Email Campaigns</h1>
+            <p data-aos="fade-left">
               Create and launch email campaigns that captivate your customers in
               just a few clicks.
             </p>
             <div>
-              <button type="button">TRY NOW</button>
-              <button type="button">GET A DEMO</button>
+              <button data-aos="fade-down" type="button">
+                TRY NOW
+              </button>
+              <button data-aos="fade-down" type="button">
+                GET A DEMO
+              </button>
             </div>
           </div>
           <img
+            data-aos="zoom-out"
             className={styles.heroPhoto}
             src="assets/photo-hero.jpg"
             alt="Hero photo"
@@ -38,6 +49,7 @@ export default function Home() {
 
         {/* ================= video session ================== */}
         <section
+          data-aos="fade-down"
           className={styles.video}
           style={{ backgroundImage: `url("/assets/video.jpg")` }}
         >
@@ -47,7 +59,7 @@ export default function Home() {
 
         {/* ================= cards session ================== */}
         <section className={styles.cardsSession}>
-          <div className={styles.card}>
+          <div data-aos="fade-down" className={styles.card}>
             <img src="assets/card1.jpg" alt="Card image" />
             <div>
               <p>
@@ -58,7 +70,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.card}>
+          <div data-aos="fade-down" className={styles.card}>
             <img src="assets/card2.jpg" alt="Card image" />
             <div>
               <p>
@@ -69,7 +81,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.cardsSessionTexts}>
+          <div data-aos="fade-down" className={styles.cardsSessionTexts}>
             <h3>The source for proven, engaging email campaigns</h3>
             <p>
               Whether you’re a startup, small business, e-commerce store, or
@@ -82,28 +94,37 @@ export default function Home() {
         {/* ================= email input session ================== */}
         <section className={styles.emailInputSession}>
           <div className={styles.studyCases}>
-            <div style={{ backgroundImage: `url("assets/frankie.jpg")` }}>
+            <div
+              data-aos="fade-down"
+              style={{ backgroundImage: `url("assets/frankie.jpg")` }}
+            >
               <strong>Frankie</strong>
               <p>Member since 2016</p>
             </div>
 
-            <div style={{ backgroundImage: `url("assets/camile.jpg")` }}>
+            <div
+              data-aos="fade-down"
+              style={{ backgroundImage: `url("assets/camile.jpg")` }}
+            >
               <strong>Camile</strong>
               <p>Member since 2012</p>
             </div>
 
-            <div style={{ backgroundImage: `url("assets/elayne.jpg")` }}>
+            <div
+              data-aos="fade-down"
+              style={{ backgroundImage: `url("assets/elayne.jpg")` }}
+            >
               <strong>Elayne</strong>
               <p>Member since 2018</p>
             </div>
           </div>
 
-          <h2>
+          <h2 data-aos="fade-down">
             Learn how others are reaching their audience easier than ever
             before.
           </h2>
 
-          <div className={styles.inputContainer}>
+          <div data-aos="fade-down" className={styles.inputContainer}>
             <div>
               <input type="email" placeholder="Enter your email" />
             </div>
@@ -113,29 +134,34 @@ export default function Home() {
 
         {/* ================= brands session ================== */}
         <section className={styles.brandsSession}>
-          <h2>All the best brands already use us.</h2>
+          <h2 data-aos="fade-down">All the best brands already use us.</h2>
           <div>
             <img
+              data-aos="zoom-in"
               id={styles.lastKnightParis}
               src="/assets/last-knight-paris.png"
               alt="logo last knight paris"
             />
             <img
+              data-aos="zoom-in"
               id={styles.dragonEyeVodka}
               src="/assets/dragon-eye-vodka.png"
               alt="logo dragon eye vodka"
             />
             <img
+              data-aos="zoom-in"
               id={styles.questAi}
               src="/assets/quest-ai.png"
               alt="logo quest ai"
             />
             <img
+              data-aos="zoom-in"
               id={styles.radiotee}
               src="/assets/radiotee.png"
               alt="logo radiotree"
             />
             <img
+              data-aos="zoom-in"
               id={styles.gamecommerce}
               src="/assets/gamecommerce.png"
               alt="logo gamecommerce"
@@ -145,8 +171,10 @@ export default function Home() {
 
         {/* ================= get started session ================== */}
         <section className={styles.getStarted}>
-          <h1>Get started today!</h1>
-          <button type="button">PICK A PLAN</button>
+          <h1 data-aos="fade-down">Get started today!</h1>
+          <button data-aos="zoom-out" type="button">
+            PICK A PLAN
+          </button>
         </section>
       </main>
     </>

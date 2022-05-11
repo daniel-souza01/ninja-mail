@@ -313,7 +313,7 @@
   display: inline-block;
 }
 
-.inputContainer div::after {
+/* .inputContainer div::after {
   content: 'Thanks! Email received.';
   position: absolute;
   left: 1.5625rem;
@@ -324,7 +324,7 @@
   line-height: 1.5625rem;
   letter-spacing: 1.05px;
   color: var(--green);
-}
+} */
 
 .inputContainer input::placeholder {
   color: var(--black);
