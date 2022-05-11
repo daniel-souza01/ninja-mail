@@ -1,0 +1,253 @@
+.emailInputSession {
+  width: 92.19%;
+  height: auto;
+  max-width: 1089px;
+
+  margin: 8.3125rem auto 0px;
+  position: relative;
+}
+
+.studyCases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+  gap: 2rem;
+}
+
+.studyCases div {
+  height: 14.9375rem;
+  max-height: 239px;
+  max-width: 342px;
+  min-width: 223px;
+
+  padding-left: 1.6875rem;
+  background-size: cover;
+  transition: transform 0.2s;
+}
+
+.studyCases div:hover {
+  transform: translateY(-4px) !important;
+}
+
+.studyCases strong {
+  font-weight: 900;
+  font-size: 2.125rem;
+  line-height: 2.5rem;
+  color: var(--white);
+
+  display: inline-block;
+  margin-top: 9.5625rem;
+}
+
+.studyCases p {
+  font-weight: 700;
+  font-size: 1.1875rem;
+  line-height: 1.375rem;
+  color: var(--white);
+}
+
+.emailInputSession h2 {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  text-align: center;
+  color: var(--black);
+
+  max-width: 904px;
+  margin: 2.5rem auto 0px;
+}
+
+.inputContainer {
+  max-width: 668px;
+
+  margin: 2.5rem auto 2.8125rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer input {
+  width: 26.25rem;
+  height: 4.0625rem;
+
+  background: var(--white);
+  border: 1px solid var(--input-border-color);
+  border-radius: 5px;
+
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.05px;
+
+  padding-left: 1.5625rem;
+}
+
+.inputContainer div {
+  position: relative;
+  display: inline-block;
+}
+
+/* .inputContainer div::after {
+  content: 'Thanks! Email received.';
+  position: absolute;
+  left: 1.5625rem;
+  top: 5.3125rem;
+
+  font-weight: 500;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.05px;
+  color: var(--green);
+} */
+
+.inputContainer input::placeholder {
+  color: var(--black);
+}
+
+.inputContainer input:-ms-input-placeholder {
+  color: var(--black);
+}
+
+.inputContainer input::-ms-input-placeholder {
+  color: var(--black);
+}
+
+.inputContainer button {
+  width: 13.8125rem;
+  height: 4.0625rem;
+
+  font-weight: 900;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.05px;
+  color: var(--white);
+  text-align: center;
+
+  margin-left: 1.6875rem;
+  border: none;
+  background: var(--green);
+  transition: filter 0.2s;
+}
+
+.inputContainer button:hover {
+  filter: brightness(0.9);
+}
+
+/* ================= media queries ================== */
+
+@media (max-width: 768px) {
+  .emailInputSession {
+    max-width: 708px;
+    margin: 5.4375rem auto 0px;
+  }
+
+  .studyCases {
+    gap: 1.21875rem;
+  }
+
+  .studyCases div {
+    height: 9.8125rem;
+    max-height: 157px;
+    max-width: 223px;
+    padding-left: 1.06625rem;
+  }
+
+  .studyCases strong {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    margin-top: 6.25rem;
+  }
+
+  .studyCases p {
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+  }
+
+  .emailInputSession h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 1.5625rem auto 0px;
+    max-width: 475px;
+  }
+
+  .inputContainer {
+    max-width: 436px;
+    margin: 1.25rem auto 1.75rem;
+  }
+
+  .inputContainer input {
+    width: 17.1875rem;
+    height: 2.625rem;
+
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.65px;
+    padding-left: 1rem;
+  }
+
+  .inputContainer div::after {
+    left: 1rem;
+    top: 3.4375rem;
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.65px;
+  }
+
+  .inputContainer button {
+    width: 9rem;
+    height: 2.625rem;
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.65px;
+
+    margin-left: 1.0625rem;
+  }
+}
+
+@media (max-width: 765px) {
+  .studyCases {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 502px) {
+  .emailInputSession {
+    margin: 2.9375rem auto 0px;
+  }
+
+  .studyCases {
+    gap: 1.3125rem;
+  }
+
+  .emailInputSession h2 {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+    margin: 3.6875rem auto 0px;
+    max-width: 215px;
+  }
+
+  .inputContainer {
+    max-width: 223px;
+    margin: 0.9375rem auto 0px;
+  }
+
+  .inputContainer input {
+    width: 13.9375rem;
+    padding-left: 0.875rem;
+  }
+
+  .inputContainer div::after {
+    left: 2.5rem;
+    top: 3rem;
+
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    letter-spacing: 0.6px;
+  }
+
+  .inputContainer button {
+    margin-left: 0;
+    margin-top: 1.6875rem;
+  }
+}

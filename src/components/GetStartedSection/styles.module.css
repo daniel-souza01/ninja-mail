@@ -1,0 +1,85 @@
+.getStarted {
+  position: relative;
+  width: 100%;
+  height: 22.875rem;
+  max-width: 1440px;
+
+  background: var(--green);
+  margin-top: 9.125rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getStarted h1 {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 5rem;
+  color: var(--white);
+
+  text-align: center;
+}
+
+.getStarted button {
+  width: 12.5rem;
+  height: 4.0625rem;
+  margin-top: 2.5rem;
+
+  font-weight: 900;
+  font-size: 1.3125rem;
+  line-height: 1.5625rem;
+  letter-spacing: 1.05px;
+  color: var(--green);
+  text-align: center;
+
+  border: none;
+  background: var(--white);
+  transition: filter 0.2s !important;
+}
+
+.getStarted button:hover {
+  filter: brightness(0.9);
+}
+
+/* ================= media queries ================== */
+
+@media (max-width: 768px) {
+  .getStarted {
+    height: 15rem;
+    margin-top: 5.9375rem;
+  }
+
+  .getStarted h1 {
+    font-size: 2.625rem;
+    line-height: 3.5rem;
+  }
+
+  .getStarted button {
+    width: 8.1875rem;
+    height: 2.625rem;
+    margin-top: 2.25rem;
+
+    font-size: 0.8125rem;
+    line-height: 0.9375rem;
+    letter-spacing: 0.65px;
+  }
+}
+
+@media (max-width: 320px) {
+  .getStarted {
+    height: 18.125rem;
+    margin-top: 3.625rem;
+  }
+
+  .getStarted h1 {
+    max-width: 259px;
+    line-height: 3rem;
+  }
+
+  .getStarted button {
+    margin-top: 3rem;
+  }
+}

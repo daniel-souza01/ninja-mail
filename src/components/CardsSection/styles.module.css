@@ -1,0 +1,204 @@
+.cardsSession {
+  width: 94.38%;
+  height: auto;
+  min-height: 533px;
+  max-width: 1098px;
+
+  position: relative;
+  margin: 6.125rem auto 0px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(209px, 1fr));
+  gap: 1.875rem;
+}
+
+.cardsSession div:first-child {
+  align-self: flex-start;
+}
+
+.card {
+  height: 28.0625rem;
+  max-height: 449px;
+  max-width: 320px;
+
+  position: relative;
+  align-self: flex-end;
+  transition: transform 0.2s !important;
+}
+
+.card:hover {
+  transform: translateY(-4px) !important;
+}
+
+.card img {
+  height: 17.625rem;
+  width: 100%;
+}
+
+.card div {
+  height: 12.25rem;
+  padding: 1.5rem 2.4375rem 1.25rem 1.875rem;
+
+  position: absolute;
+  bottom: 0px;
+  z-index: 100;
+
+  background: var(--white);
+  font-size: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card div p {
+  font-weight: 500;
+  line-height: 1.625rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.card div a {
+  font-weight: 800;
+  line-height: 1.1875rem;
+  color: var(--green);
+
+  display: inline-block;
+}
+
+.cardsSessionTexts {
+  height: auto;
+  max-height: 324px;
+  max-width: 365px;
+  align-self: center;
+}
+
+.cardsSessionTexts h3 {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  font-size: 2.75rem;
+  line-height: 3rem;
+}
+
+.cardsSessionTexts p {
+  font-weight: 500;
+  font-size: 1.1875rem;
+  line-height: 1.625rem;
+
+  max-width: 322px;
+  margin-top: 1.5rem;
+}
+
+/* ================= media queries  ================== */
+
+@media (max-width: 768px) {
+  .cardsSession {
+    min-height: 348px;
+    max-width: 710px;
+
+    margin: 4rem auto 0px;
+    justify-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(209px, 1fr));
+    gap: 1.875rem;
+  }
+
+  .cardsSession div:first-child {
+    align-self: flex-start;
+  }
+
+  .card {
+    height: 18.375rem;
+    max-height: 294px;
+    max-width: 209px;
+
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .card img {
+    height: 11.576875rem;
+  }
+
+  .card div {
+    height: 8rem;
+    padding: 1.0625rem 1.5625rem 0.8125rem 1.25rem;
+
+    font-size: 0.75rem;
+  }
+
+  .card div p {
+    line-height: 1rem;
+  }
+
+  .card div a {
+    font-weight: 800;
+    line-height: 0.875rem;
+
+    margin-top: auto;
+  }
+
+  .cardsSessionTexts {
+    height: auto;
+    max-height: 206px;
+    max-width: 232px;
+    justify-self: center;
+  }
+
+  .cardsSessionTexts h3 {
+    font-size: 1.75rem;
+    line-height: 1.9375rem;
+  }
+
+  .cardsSessionTexts p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+
+    max-width: 203px;
+    margin-top: 1.0625rem;
+  }
+}
+
+@media (max-width: 719px) {
+  .cardsSession div:first-child {
+    margin-top: 0px;
+  }
+
+  .card {
+    margin-top: 3.615rem;
+  }
+
+  .cardsSession div:last-child {
+    grid-column: span 2 / span 2;
+  }
+}
+
+@media (max-width: 470px) {
+  .cardsSession {
+    max-width: 302px;
+  }
+
+  .card {
+    margin-top: 0px;
+  }
+
+  .cardsSession div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .cardsSession div:first-child {
+    justify-self: start;
+  }
+
+  .card {
+    justify-self: end;
+  }
+}
