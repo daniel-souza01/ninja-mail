@@ -525,7 +525,7 @@
 
   .heroLeftItems p {
     font-size: 0.875rem;
-    margin-top: 6.125rem;
+    margin-top: 8.7rem;
     max-width: 18.125rem;
   }
 
@@ -544,8 +544,21 @@
 
   .heroPhoto {
     max-width: 100%;
-    max-height: 10.5625rem;
+    height: 185px;
     margin-top: 3.1875rem;
+  }
+}
+@media (max-width: 320px) {
+  .heroPhoto {
+    max-width: 100%;
+    height: 10.5625rem;
+    margin-top: 3.1875rem;
+  }
+
+  .heroLeftItems p {
+    font-size: 0.875rem;
+    margin-top: 6.125rem;
+    max-width: 18.125rem;
   }
 }
 
@@ -694,6 +707,45 @@
 
     max-width: 203px;
     margin-top: 1.0625rem;
+  }
+}
+
+@media (max-width: 719px) {
+  .cardsSession div:first-child {
+    margin-top: 0px;
+  }
+
+  .card {
+    margin-top: 3.615rem;
+  }
+
+  .cardsSession div:last-child {
+    grid-column: span 2 / span 2;
+  }
+}
+
+@media (max-width: 470px) {
+  .cardsSession {
+    max-width: 302px;
+  }
+
+  .card {
+    margin-top: 0px;
+  }
+
+  .cardsSession div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  .cardsSession div:first-child {
+    justify-self: start;
+  }
+
+  .card {
+    justify-self: end;
   }
 }
 

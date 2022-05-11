@@ -137,31 +137,31 @@ export default function Home() {
           <h2 data-aos="fade-down">All the best brands already use us.</h2>
           <div>
             <img
-              data-aos="zoom-in"
+              data-aos="fade-down"
               id={styles.lastKnightParis}
               src="/assets/last-knight-paris.png"
               alt="logo last knight paris"
             />
             <img
-              data-aos="zoom-in"
+              data-aos="fade-down"
               id={styles.dragonEyeVodka}
               src="/assets/dragon-eye-vodka.png"
               alt="logo dragon eye vodka"
             />
             <img
-              data-aos="zoom-in"
+              data-aos="fade-down"
               id={styles.questAi}
               src="/assets/quest-ai.png"
               alt="logo quest ai"
             />
             <img
-              data-aos="zoom-in"
+              data-aos="fade-down"
               id={styles.radiotee}
               src="/assets/radiotee.png"
               alt="logo radiotree"
             />
             <img
-              data-aos="zoom-in"
+              data-aos="fade-down"
               id={styles.gamecommerce}
               src="/assets/gamecommerce.png"
               alt="logo gamecommerce"
@@ -172,7 +172,7 @@ export default function Home() {
         {/* ================= get started session ================== */}
         <section className={styles.getStarted}>
           <h1 data-aos="fade-down">Get started today!</h1>
-          <button data-aos="zoom-out" type="button">
+          <button data-aos="fade-down" type="button">
             PICK A PLAN
           </button>
         </section>

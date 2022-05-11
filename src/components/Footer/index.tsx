@@ -8,12 +8,12 @@ export function Footer() {
       <footer className={styles.footerContainer}>
         <div className={styles.firstFooterGroup}>
           <Link href="/" passHref>
-            <a data-aos="fade-right">
+            <a data-aos="fade-down">
               <img src="logo-full.svg" alt="Logo" />
             </a>
           </Link>
 
-          <div data-aos="fade-left" className={styles.footerLinks}>
+          <div data-aos="fade-down" className={styles.footerLinks}>
             <ul>
               <li>
                 <a href="#">Features</a>
@@ -65,7 +65,7 @@ export function Footer() {
                 <a href="#">LinkedIn</a>
               </li>
             </ul>
-            <ul>
+            <ul id={styles.lastUl}>
               <li>
                 <a href="#">Contact Us</a>
               </li>
