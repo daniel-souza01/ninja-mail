@@ -62,6 +62,7 @@
   padding: 2.4375rem 0px;
 
   display: flex;
+  justify-content: space-between;
 
   font-weight: 700;
   font-size: 0.9375rem;
@@ -78,6 +79,32 @@
 
 /* ================= media queries ================= */
 
+@media (max-width: 970px) {
+  .footerLinks {
+    width: 28rem;
+  }
+
+  .footerLinks ul li {
+    font-size: 1rem;
+    line-height: 1.1875rem;
+  }
+
+  .secondFooterGroup {
+    max-width: 682px;
+
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+  }
+
+  .secondFooterGroup div {
+    margin-left: 75px;
+  }
+
+  .secondFooterGroup div a + a {
+    margin-left: 25px;
+  }
+}
+
 @media (max-width: 768px) {
   .footerContainer {
     height: 17.875rem;
@@ -89,7 +116,7 @@
 
   .firstFooterGroup a img {
     width: 7.939375rem;
-    height: 2.3125rem;
+    height: 2.329375rem;
 
     margin: 2.9375rem 0px 0px;
   }
@@ -128,58 +155,63 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 585px) {
+  .secondFooterGroup {
+    flex-direction: column;
+  }
+
+  .secondFooterGroup div {
+    margin-left: 0px;
+    margin-top: 1.75rem;
+  }
+}
+
+@media (max-width: 502px) {
   .footerContainer {
-    height: 17.875rem;
+    height: 30.375rem;
   }
 
   .firstFooterGroup {
-    max-width: 955px;
-
     flex-direction: column;
   }
 
   .firstFooterGroup a img {
-    width: 7.939375rem;
-    height: 2.3125rem;
-
-    margin: 2.9375rem 0px 0px;
+    margin: 2.9375rem 0px 0px -1.0625rem;
   }
 
   .footerLinks {
-    width: 23rem;
-    height: 8.1425rem;
+    width: 13.1875rem;
+    height: 13.3925rem;
+    margin: 0.233125rem 0px 0.7325rem;
 
-    margin: 3.1875rem 0px 2.3575rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
   }
 
-  .footerLinks ul li {
-    font-size: 0.75rem;
-    line-height: 0.875rem;
-    margin-bottom: 0.4375rem;
-  }
-
-  .divider {
-    /*width: 89.38%;*/
-    /*max-width: 1088px;*/
-    height: 1px;
-    /*margin: auto;*/
-    /*background: var(--footer-divider-color);*/
+  #secondUl {
+    margin-top: -1.375rem;
   }
 
   .secondFooterGroup {
-    max-width: 600px;
-    padding: 1.5625rem 0px 1.875rem;
+    padding: 1.375rem 0px 3.1875rem;
+    line-height: 1.1875rem;
+  }
 
-    font-size: 0.5625rem;
-    line-height: 0.6875rem;
+  .secondFooterGroup p {
+    max-width: 11.625rem;
   }
 
   .secondFooterGroup div {
-    margin-left: 5.8125rem;
+    margin-left: 0px;
+    margin-top: 1.875rem;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .secondFooterGroup div a + a {
-    margin-left: 1.875rem;
+    margin-left: 0px;
+    margin-top: 0.5625rem;
   }
 }

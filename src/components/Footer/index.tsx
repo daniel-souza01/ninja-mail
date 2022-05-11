@@ -28,7 +28,7 @@ export function Footer() {
                 <a href="#">Partners</a>
               </li>
             </ul>
-            <ul>
+            <ul id={styles.secondUl}>
               <li>
                 <a href="#">About Us</a>
               </li>

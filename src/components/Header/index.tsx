@@ -25,9 +25,9 @@ export function Header() {
           <Link href="/" passHref>
             <a>PARTNERS</a>
           </Link>
-
-          <button type="button">SIGN UP FREE</button>
         </nav>
+
+        <button type="button">SIGN UP FREE</button>
       </div>
     </header>
   )
